@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Twist Chat</string>
+
+    <string name="alert_error">Errors encountered, please try again later.</string>
+    <string name="alert_no_connection">Unable to access internet. Please ensure you have a valid internet connection and try again.</string>
+    <string name="alert_unexpected_error">Sorry. An unexpected error has occurred</string>
+    <string name="alert_connection_timeout">Connection Time Out</string>
+    <string name="alert_location_services">Các dịch vụ về vị trí phải được bật để có được vị trí của bạn.</string>
+
+    <!--msg-->
+    <string name="msg_exit_app">Press Back again to exit.</string>
+    <string name="msg_log_out_app">Are you sure you want to log out?</string>
+    <string name="msg_delete_message">Are you sure you want to delete this message?</string>
+    <string name="msg_delete_chat">Are you sure you want to delete this chat?</string>
+    <string name="msg_block_account">Are you sure you want to block this account?</string>
+    <string name="msg_unblock_account">Are you sure you want to unblock this account?</string>
+    <string name="msg_remove_favourite_account">Are you sure you want to remove favourite this account?</string>
+    <string name="msg_delete_account">Are you sure you want to delete this account?</string>
+    <string name="msg_update_change_language">Update language changes.</string>
+    <string name="msg_already_reported">Already reported</string>
+
+    <!--msg error-->
+    <string name="msg_error_enter_mail">Please enter email</string>
+    <string name="msg_error_enter_username">Please enter username</string>
+    <string name="msg_error_mail_invalid">Email invalid</string>
+    <string name="msg_error_enter_password">Please enter password</string>
+    <string name="msg_error_enter_password_not_match">Password not match</string>
+    <string name="msg_error_enter_content">Please enter content</string>
+    <string name="msg_error_choose_country">Please choose country</string>
+    <string name="msg_error_choose_a_larger_image_size">Choose a larger image size</string>
+    <string name="msg_error_please_enter_desription">Please enter status.</string>
+    <string name="msg_error_please_enter_gender">Please choose gender.</string>
+    <string name="msg_please_choose_banner">Please choose banner picture.</string>
+    <string name="msg_please_enter_name">Please enter name of advertisement.</string>
+    <string name="msg_please_enter_content">Please enter content of advertisement.</string>
+    <string name="msg_please_enter_url">Please enter url of advertisement.</string>
+    <string name="msg_please_enter_from_date">Please enter from date.</string>
+    <string name="msg_please_enter_to_date">Please enter to date.</string>
+    <string name="msg_the_name_must_be_at_least">The content must be at least 6 characters long and can not exceed 500 characters.</string>
+
+    <!--title-->
+    <string name="title_select_picture">Choose photo</string>
+    <string name="title_account_suspended">Account suspended</string>
+    <string name="title_select_country">Select country</string>
+    <string name="title_register">Register</string>
+    <string name="title_add_advertisement">Add advertisement</string>
+    <string name="title_manage_advertisement">Manage advertisement</string>
+    <string name="title_terms_of_use">Terms of Use</string>
+    <string name="title_privacy_policy">Privacy Policy</string>
+
+    <!--hint-->
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Retype password</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_name_of_advertisement">Name of advertisement</string>
+    <string name="hint_content_of_advertisement">Content of advertisement</string>
+    <string name="hint_url_of_advertisement">URL of advertisement</string>
+    <string name="hint_search">Search</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_content">Content</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_enter_message">Enter message</string>
+
+    <!--tab-->
+    <string name="tab_chat">Chat</string>
+    <string name="tab_people">People</string>
+    <string name="tab_followed">Followed</string>
+    <string name="tab_travel_to">Travel to</string>
+    <string name="tab_nearby">Nearby</string>
+    <string name="tab_all">All</string>
+
+    <!-- Side menu items -->
+    <string name="menu_setting">Setting</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_share_app">Share app</string>
+    <string name="menu_log_out">Log out</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_block">Block</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_flag_report">Flag and Report</string>
+    <string name="menu_app_info">App information</string>
+    <string name="menu_list_app">Application List</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_log_in">Log in</string>
+    <string name="menu_manage_ads">Manage Ads</string>
+    <string name="menu_active_vip">Active VIP</string>
+
+    <string name="menu_male">Male</string>
+    <string name="menu_female">Female</string>
+    <string name="menu_online">Online</string>
+    <string name="menu_offline">Offline</string>
+    <string name="menu_busy">Busy</string>
+
+    <!-- side nav -->
+    <string name="side_nav_drawer_open">Open navigation drawer</string>
+    <string name="side_nav_drawer_close">Close navigation drawer</string>
+
+    <!--label-->
+    <string name="lbl_coppy_clipboard">Copied to clipboard</string>
+    <string name="lbl_message_removed">This message has been deleted</string>
+    <string name="lbl_save_image_success">Image saved</string>
+    <string name="lbl_empty">Empty</string>
+    <string name="lbl_hi">Hi!!!</string>
+    <string name="lbl_send_a_photo">Sent an image</string>
+    <string name="lbl_send_a_message">Sent a message</string>
+    <string name="lbl_not_connect">Can\'t connect right now</string>
+    <string name="lbl_notification_setting">Notification Settings</string>
+    <string name="lbl_blocked_user">Blocked Users</string>
+    <string name="lbl_language">Languages</string>
+    <string name="lbl_other">Other</string>
+    <string name="lbl_sound">Sound</string>
+    <string name="lbl_vibration">Vibration</string>
+    <string name="lbl_english">English</string>
+    <string name="lbl_vietnamese">Vietnamese</string>
+    <string name="lbl_delete_account">Delete account</string>
+    <string name="lbl_title_report">Select the reason why you report.</string>
+    <string name="lbl_today">Today</string>
+    <string name="lbl_days">days</string>
+    <string name="lbl_search_not_found_with">Not found with keyword</string>
+    <!--thien-->
+    <string name="lbl_nick_name">Nickname</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_gender">Gender</string>
+    <string name="lbl_country">Country</string>
+    <string name="lbl_total_favorite">Total favorite</string>
+    <string name="lbl_share_google_plus">Share G+</string>
+    <string name="lbl_share_facebook">Share Facebook</string>
+    <string name="lbl_add_contact">Add contact</string>
+    <string name="lbl_banner_of_advertisement">Banner of advertisement</string>
+    <string name="lbl_form_date">From date</string>
+    <string name="lbl_to_date">To date</string>
+    <string name="lbl_display_publish_or_none">Display Publish Or None</string>
+    <string name="lbl_display_or_none">Display Or None</string>
+
+    <!--BUTTON-->
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_save_image">Save Image</string>
+    <string name="btn_edit_message">Edit message</string>
+    <string name="btn_copy_message">Copy message</string>
+    <string name="btn_delete_message">Delete message</string>
+    <string name="btn_photo_library">Photo library</string>
+    <string name="btn_take_photo">Take photo</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_block">Block</string>
+    <string name="btn_unblock">Unblock</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_remove_favourite">Remove favourite</string>
+
+    <!--report-->
+    <string-array name="reportArray">
+        <item>Sexual behaviours</item>
+        <item>Offensive behaviours</item>
+        <item>Violate threats</item>
+        <item>Harassment</item>
+        <item>Heinous cheating</item>
+        <item>Inappropriate photos</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--font-->
+    <string name="font">fonts/SourceSansPro-Regular.otf</string>
+    <string name="font_semibold">fonts/SourceSansPro-Semibold.otf</string>
+    <string name="font_light">fonts/SourceSansPro-Light.otf</string>
+    <string name="font_heavy">fonts/SourceSansPro-Bold.otf</string>
+    <string name="font_bold">fonts/SourceSansPro-Bold.otf</string>
+    <string name="font_medium">fonts/SourceSansPro-Light.otf</string>
+    <string name="font_thin">fonts/SourceSansPro-Light.otf</string>
+
+    <!--GPS setting-->
+    <string name="lbl_gps_setting">GPS in settings </string>
+    <string name="lbl_gps_message">GPS is not enabled. Do you want to go to settings menu?</string>
+
+    <!--ads-->
+    <string name="impossible_game">Impossible Game</string>
+    <string name="retry_button_text">Retry</string>
+    <string name="watch_video_button_text">Watch Video for 10 additional coins</string>
+    <string name="default_coin_text">Coins: 0</string>
+
+    <string name="facebook_app_id">294659987558990</string> <!--DineInn vantangst@gmail.com-->
+
+
+    <!-- AdMob ad unit IDs -->
+    <!--<string name="banner_home_footer">ca-app-pub-6925282602161900/9200353071</string>--><!--tang-->
+    <string name="banner_home_footer">ca-app-pub-5966183733493342/6518671310</string><!--song-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-6925282602161900/4953453474</string>--><!--tang-->
+    <string name="interstitial_full_screen">ca-app-pub-5966183733493342/9479994113</string><!--song-->
+    <string name="ads_video_forward">ca-app-pub-5966183733493342/3565204915</string><!--of song-->
+
+</resources>

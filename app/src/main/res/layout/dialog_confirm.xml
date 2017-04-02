@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/rounded_corner"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_solid_blude"
+        android:textSize="20dp"
+        android:text=""
+        android:visibility="visible"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:text="sdfdsf"
+        android:textColor="@color/text_solid_blude"
+        android:textSize="@dimen/size_S" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMessage"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_white_conner_left_bottom_small"
+            android:text="@string/btn_no"
+            android:textAllCaps="false"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_solid_blude"
+            android:textSize="@dimen/size_S"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_solid_blude"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_white_conner_right_bottom_small"
+            android:text="@string/btn_yes"
+            android:textAllCaps="false"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_solid_blude"
+            android:textSize="@dimen/size_S"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_height_small"
+        android:layout_below="@+id/lblMessage"
+        android:background="@color/text_solid_blude"/>
+
+</RelativeLayout>

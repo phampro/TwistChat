@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="size_XXS">9sp</dimen>
+    <dimen name="size_XS">12sp</dimen>
+    <dimen name="size_S">15sp</dimen>
+    <dimen name="size_M">17sp</dimen>
+    <dimen name="size_L">19sp</dimen>
+    <dimen name="size_XL">20sp</dimen>
+    <dimen name="size_XXL">24sp</dimen>
+    <dimen name="size_XXXL">30sp</dimen>
+    <dimen name="size_XXXXL">40sp</dimen>
+
+    <dimen name="padding_XXS">2dp</dimen>
+    <dimen name="padding_XS">5dp</dimen>
+    <dimen name="padding_S">10dp</dimen>
+    <dimen name="padding_M">15dp</dimen>
+    <dimen name="padding_L">20dp</dimen>
+    <dimen name="padding_L_2">25dp</dimen>
+    <dimen name="padding_XL">30dp</dimen>
+    <dimen name="padding_XL_2">45dp</dimen>
+    <dimen name="padding_XL_1">55dp</dimen>
+    <dimen name="padding_XL_3">35dp</dimen>
+    <dimen name="padding_XXL">60dp</dimen>
+    <dimen name="padding_XXXL">120dp</dimen>
+    <dimen name="padding_XXXL_logo">80dp</dimen>
+    <dimen name="padding_XXXL_02">135dp</dimen>
+    <dimen name="padding_XXXL_03">140dp</dimen>
+    <dimen name="padding_XXXL_card">160dp</dimen>
+
+    <dimen name="padding_XXS_n">-2dp</dimen>
+    <dimen name="padding_XS_n">-5dp</dimen>
+    <dimen name="padding_S_n">-10dp</dimen>
+    <dimen name="padding_M_n">-15dp</dimen>
+    <dimen name="padding_L_n">-20dp</dimen>
+    <dimen name="padding_XL_n">-30dp</dimen>
+    <dimen name="padding_XXL_n">-60dp</dimen>
+    <dimen name="padding_XXXL_n">-120dp</dimen>
+
+    <dimen name="space_height">1dp</dimen>
+    <dimen name="space_height_small">0.5dp</dimen>
+    <dimen name="space_height_small_small">0.25dp</dimen>
+
+
+    <dimen name="size_button_minWidth">200dp</dimen>
+    <dimen name="size_button_height">60dp</dimen>
+    <dimen name="size_button_height_small">40dp</dimen>
+
+    <dimen name="editext_height">55dp</dimen>
+
+    <dimen name="radius_10">10dp</dimen>
+
+</resources>

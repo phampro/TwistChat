@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swMember"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTop">
+
+        <com.hoangsong.zumechat.view.EndlessListView
+            android:id="@+id/lvMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/light_grey_01"
+            android:dividerHeight="@dimen/space_height_small_small"
+            android:listSelector="@android:color/transparent"
+            tool:listitem="@layout/item_list_base"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/tvFromEmpty"
+        style="@style/tvBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/lbl_empty"/>
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:paddingTop="@dimen/space_height_small_small"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/btnYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_cancel"/>
+        <TextView
+            android:layout_width="@dimen/space_height_small_small"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/btnYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_delete"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

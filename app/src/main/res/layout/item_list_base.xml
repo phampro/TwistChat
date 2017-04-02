@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_S"
+        android:paddingRight="@dimen/padding_S"
+        android:paddingTop="@dimen/padding_M"
+        android:paddingBottom="@dimen/padding_M"
+        android:id="@+id/llMainItem">
+
+        <CheckBox
+            android:id="@+id/cbDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_M"/>
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_normal" />
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginBottom="1.5dp"
+                android:src="@drawable/bg_dot_green" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_S"
+            android:paddingRight="@dimen/padding_S">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvName"
+                    style="@style/tvOrange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tang le"
+                    android:singleLine="true"
+                    app:customTypeface="@string/font_semibold"
+                    android:paddingRight="@dimen/padding_S"
+                    android:layout_toLeftOf="@+id/tvTimeAfterOffline"
+                    android:layout_alignParentLeft="true" />
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvTimeAfterOffline"
+                    style="@style/tvBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30 min"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10sp"
+                    app:customTypeface="@string/font_light" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvStatus"
+                    style="@style/tvBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_hi"
+                    android:layout_toLeftOf="@+id/tvDistance"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    app:customTypeface="@string/font_light" />
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvDistance"
+                    style="@style/tvBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    app:customTypeface="@string/font_light" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivHi"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_pan_tool_gray_24dp"/>
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                style="@style/tvBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Hi!"
+                app:customTypeface="@string/font_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_height_small_small"
+        android:visibility="gone"
+        android:background="@color/light_grey_02"/>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_XS"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        android:visibility="gone"
+        app:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

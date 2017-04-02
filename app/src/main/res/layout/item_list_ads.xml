@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_XS"
+    android:paddingLeft="@dimen/padding_L"
+    android:paddingTop="@dimen/padding_XS">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/blue_01_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_S"
+        android:layout_marginRight="@dimen/padding_S"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvName"
+            style="@style/tvBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Quảng cáo mới"
+            android:textSize="@dimen/size_S"
+            app:customTypeface="@string/font_semibold" />
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvContent"
+            style="@style/tvBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Khuyến mãi lớn trong năm"
+            android:textSize="@dimen/size_XS"
+            app:customTypeface="@string/font_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvUrl"
+                style="@style/tvBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:drawablePadding="3dp"
+                android:text="https://google.com/"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_link"
+                android:textSize="@dimen/size_XS"
+                app:customTypeface="@string/font_light" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_M"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_menu_gray_24dp" />
+
+</LinearLayout>

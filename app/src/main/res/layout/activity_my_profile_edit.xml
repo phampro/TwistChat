@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#FF9900">
+
+        <ImageView
+            android:id="@+id/ivBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/actionbar_layout_back_transparent" />
+
+        <ImageButton
+            android:id="@+id/ibChooseBackground"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_L"
+            android:background="@null"
+            android:src="@drawable/ic_edit_cam" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-30dp">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_profile_normal" />
+
+        <ImageButton
+            android:id="@+id/ibChooseAvatar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_camera_profile"
+            android:src="@drawable/ic_edit_cam" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_L"
+            android:layout_marginLeft="@dimen/padding_L"
+            android:layout_marginRight="@dimen/padding_L"
+            android:layout_marginTop="@dimen/padding_XL"
+            android:background="@drawable/bg_conner_gray_20dp"
+            android:paddingTop="@dimen/padding_L"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_S"
+                    android:layout_marginLeft="@dimen/padding_L"
+                    android:layout_marginRight="@dimen/padding_L"
+                    android:orientation="horizontal">
+
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        style="@style/tvBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/lbl_nick_name" />
+
+                    <com.hoangsong.zumechat.view.CustomEditText
+                        android:id="@+id/txtNickName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:gravity="center|left"
+                        android:hint="@string/lbl_nick_name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        app:customTypeface="@string/font_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_S"
+                    android:layout_marginLeft="@dimen/padding_L"
+                    android:layout_marginRight="@dimen/padding_L"
+                    android:layout_marginTop="@dimen/padding_S"
+
+                    android:orientation="horizontal">
+
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        style="@style/tvBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/lbl_status" />
+
+                    <com.hoangsong.zumechat.view.CustomEditText
+                        android:id="@+id/txtStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:gravity="center|left"
+                        android:hint="@string/lbl_status"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        app:customTypeface="@string/font_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_S"
+                    android:layout_marginLeft="@dimen/padding_L"
+                    android:layout_marginRight="@dimen/padding_L"
+                    android:layout_marginTop="@dimen/padding_S"
+                    android:orientation="horizontal">
+
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        style="@style/tvBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/lbl_gender" />
+
+                    <com.hoangsong.zumechat.view.CustomEditText
+                        android:id="@+id/txtGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center|left"
+                        android:hint="@string/lbl_gender"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        app:customTypeface="@string/font_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_S"
+                    android:layout_marginLeft="@dimen/padding_L"
+                    android:layout_marginRight="@dimen/padding_L"
+                    android:layout_marginTop="@dimen/padding_S"
+                    android:orientation="horizontal">
+
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        style="@style/tvBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/lbl_country" />
+
+                    <com.hoangsong.zumechat.view.CustomEditText
+                        android:id="@+id/txtCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center|left"
+                        android:hint="@string/lbl_country"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        app:customTypeface="@string/font_light" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_height_small"
+                android:layout_above="@+id/llBottom"
+                android:layout_marginTop="@dimen/padding_L"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:id="@+id/llBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/padding_XL"
+                    android:paddingLeft="@dimen/padding_L"
+                    android:paddingRight="@dimen/padding_L"
+                    android:paddingTop="@dimen/padding_XL"
+                    android:onClick="onClick"
+                    android:id="@+id/llCancel">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_delete" />
+
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        android:id="@+id/tvCancel"
+                        style="@style/tvBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_S"
+                        android:gravity="center"
+                        android:text="@string/btn_cancel" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/space_height_small"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/padding_XL"
+                    android:layout_marginBottom="@dimen/padding_XL"
+                    android:background="@color/bg_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/llSave">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_check" />
+
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        android:id="@+id/tvSave"
+                        style="@style/tvBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_S"
+                        android:gravity="center"
+                        android:text="@string/btn_save" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

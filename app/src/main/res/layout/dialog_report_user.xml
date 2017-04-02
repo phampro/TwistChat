@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:orientation="vertical">
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvTitle"
+            style="@style/tvBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_L"
+            android:paddingBottom="@dimen/padding_L"
+            android:paddingLeft="@dimen/padding_S"
+            android:paddingRight="@dimen/padding_L"
+            android:text="@string/lbl_title_report"
+            app:customTypeface="@string/font_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_height"
+            android:minWidth="300dp"
+            android:background="@color/text_blue"/>
+
+        <com.hoangsong.zumechat.view.ExpandableHeightListView
+            android:id="@+id/lvReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:minWidth="300dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/btnYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lvReport"
+            android:text="@string/btn_cancel"
+            android:minWidth="300dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

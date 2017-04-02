@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Twist Chat</string>
+
+    <string name="alert_error">Lỗi, xin vui lòng thử lại sau.</string>
+    <string name="alert_no_connection">Không thể truy cập internet. Hãy đảm bảo bạn có một kết nối internet hợp lệ và thử lại.</string>
+    <string name="alert_unexpected_error">Xin lỗi. Một lỗi không mong muốn đã xảy ra.</string>
+    <string name="alert_location_services">Các dịch vụ về vị trí phải được bật để có được vị trí của bạn.</string>
+    <string name="alert_connection_timeout">Đã xảy ra lỗi, không kết nối được với máy chủ</string>
+
+    <!--msg-->
+    <string name="msg_exit_app">Nhấn trở lại lần nữa để thoát.</string>
+    <string name="msg_log_out_app">Bạn có chắc muốn đăng xuất khỏi ứng dụng?</string>
+    <string name="msg_delete_message">Bạn có chắc muốn xóa tin nhan này?</string>
+    <string name="msg_delete_chat">Bạn có chắc muốn xóa cuộc trò chuyện này?</string>
+    <string name="msg_block_account">Bạn có chắc muốn chặn tài khoản này?</string>
+    <string name="msg_unblock_account">Bạn có chắc muốn bỏ chặn tài khoản này?</string>
+    <string name="msg_remove_favourite_account">Bạn có chắc muốn xóa yêu thích tài khoản này?</string>
+    <string name="msg_delete_account">Bạn có chắc muốn xóa tài khoản này?</string>
+    <string name="msg_update_change_language">Cập nhật các thay đổi ngôn ngữ.</string>
+    <string name="msg_already_reported">Đã báo cáo</string>
+
+    <!--msg error-->
+    <string name="msg_error_enter_mail">Xin vui lòng nhập email</string>
+    <string name="msg_error_enter_username">Xin vui lòng nhập tài khoản</string>
+    <string name="msg_error_mail_invalid">Email không hợp lệ</string>
+    <string name="msg_error_enter_password">Xin vui lòng nhập mật khẩu</string>
+    <string name="msg_error_enter_password_not_match">Mật khẩu không trùng khớp</string>
+    <string name="msg_error_enter_content">Xin vui lòng nhập nội dung</string>
+    <string name="msg_error_choose_country">Xin vui lòng chon quốc gia.</string>
+    <string name="msg_error_choose_a_larger_image_size">Chọn kích thước hình ảnh lớn hơn</string>
+    <string name="msg_error_please_enter_desription">Xin vui lòng nhập trạng thái.</string>
+    <string name="msg_error_please_enter_gender">Xin vui chọn giới tính.</string>
+    <string name="msg_please_choose_banner">Vui lòng chọn ảnh quảng cáo.</string>
+    <string name="msg_please_enter_name">Xin vui lòng nhập tên quảng cáo.</string>
+    <string name="msg_please_enter_content">Xin vui lòng nhập nội dung quảng cáo.</string>
+    <string name="msg_please_enter_url">Xin vui lòng nhập đường dẫn đến quảng cáo.</string>
+    <string name="msg_please_enter_from_date">Xin vui lòng nhập ngày bắt đầu.</string>
+    <string name="msg_please_enter_to_date">Xin vui lòng nhập ngày kết thúc.</string>
+    <string name="msg_the_name_must_be_at_least">Nội dung phải dài ít nhất 6 ký tự và không thể vượt quá 500 ký tự.</string>
+
+    <!--title-->
+    <string name="title_select_picture">Chọn hình ảnh</string>
+    <string name="title_account_suspended">Tài khoản bị đình chỉ</string>
+    <string name="title_select_country">Chọn quốc gia</string>
+    <string name="title_register">Đăng ký</string>
+    <string name="title_add_advertisement">Thêm quảng cáo</string>
+    <string name="title_manage_advertisement">Quản lý quản cáo</string>
+    <string name="title_terms_of_use">Điều khoản sử dụng</string>
+    <string name="title_privacy_policy">Chính sách bảo mật</string>
+
+    <!--hint-->
+    <string name="hint_email">Email</string>
+    <string name="hint_username">Tài khoản</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_confirm_password">Nhập lại mật khẩu</string>
+    <string name="hint_country">Mã quốc gia</string>
+    <string name="hint_name_of_advertisement">Tên quảng cáo</string>
+    <string name="hint_content_of_advertisement">Nội dung quảng cáo</string>
+    <string name="hint_url_of_advertisement">Link đến quảng cáo</string>
+    <string name="hint_search">Tìm kiếm</string>
+
+    <string name="hint_title">Tiêu đề</string>
+    <string name="hint_content">Nội dung</string>
+    <string name="hint_phone">Điện thoại</string>
+    <string name="hint_enter_message">Nhập tin nhắn</string>
+
+    <!--tab-->
+    <string name="tab_chat">Tin nhắn</string>
+    <string name="tab_people">Thành viên</string>
+    <string name="tab_followed">Theo dõi</string>
+    <string name="tab_travel_to">Du lịch</string>
+    <string name="tab_nearby">Quanh đây</string>
+    <string name="tab_all">Tất cả</string>
+
+    <!-- Side menu items -->
+    <string name="menu_setting">Cài đặt</string>
+    <string name="menu_contact_us">Liên hệ</string>
+    <string name="menu_share_app">Mời bạn bè</string>
+    <string name="menu_log_out">Đăng xuất</string>
+    <string name="menu_delete">Xóa</string>
+    <string name="menu_block">Chặn</string>
+    <string name="menu_profile">Trang cá nhân</string>
+    <string name="menu_flag_report">Cờ và báo cáo</string>
+    <string name="menu_app_info">Thông tin ứng dụng</string>
+    <string name="menu_list_app">Danh sách ứng dụng</string>
+    <string name="menu_feedback">Phản hồi</string>
+    <string name="menu_log_in">Đăng nhập</string>
+    <string name="menu_manage_ads">Quản lý quản cáo</string>
+    <string name="menu_active_vip">Kích hoạt VIP</string>
+
+    <string name="menu_male">Nam</string>
+    <string name="menu_female">Nữ</string>
+    <string name="menu_online">Online</string>
+    <string name="menu_offline">Offline</string>
+    <string name="menu_busy">Busy</string>
+
+    <!-- side nav -->
+    <string name="side_nav_drawer_open">Open navigation drawer</string>
+    <string name="side_nav_drawer_close">Close navigation drawer</string>
+
+    <!--label-->
+    <string name="lbl_coppy_clipboard">Đã sao chép vào bộ nhớ tạm</string>
+    <string name="lbl_message_removed">Tin nhắn này đã bị xóa</string>
+    <string name="lbl_save_image_success">Đã lưu hình ảnh</string>
+    <string name="lbl_empty">Rổng</string>
+    <string name="lbl_hi">Xin chào!!!</string>
+    <string name="lbl_send_a_photo">Đã gủi một hình ảnh</string>
+    <string name="lbl_send_a_message">Đã gửi một tin nhắn</string>
+    <string name="lbl_not_connect">Hiện tại không có kết nối mạng nào.</string>
+    <string name="lbl_notification_setting">Thiết lập thông báo</string>
+    <string name="lbl_blocked_user">Người dùng bị chặn</string>
+    <string name="lbl_language">Ngôn ngữ</string>
+    <string name="lbl_other">Khác</string>
+    <string name="lbl_sound">Âm thanh</string>
+    <string name="lbl_vibration">Rung</string>
+    <string name="lbl_english">Tiếng Anh</string>
+    <string name="lbl_vietnamese">Tiếng Việt</string>
+    <string name="lbl_delete_account">Xóa tài khoản</string>
+    <string name="lbl_title_report">Chọn lý do bạn báo cáo.</string>
+    <string name="lbl_today">Hôm nay</string>
+    <string name="lbl_days">ngày</string>
+    <string name="lbl_search_not_found_with">Không tìm thấy kết quả với từ khóa</string>
+    <!--thien-->
+    <string name="lbl_nick_name">Biệt danh</string>
+    <string name="lbl_status">Cảm xúc</string>
+    <string name="lbl_gender">Giới tính</string>
+    <string name="lbl_country">Quốc gia</string>
+    <string name="lbl_total_favorite">Thích</string>
+    <string name="lbl_share_google_plus">Share G+</string>
+    <string name="lbl_share_facebook">Share Facebook</string>
+    <string name="lbl_add_contact">Thêm danh bạ</string>
+    <string name="lbl_banner_of_advertisement">Bảng quảng cáo</string>
+    <string name="lbl_form_date">Từ ngày</string>
+    <string name="lbl_to_date">Đến ngày</string>
+    <string name="lbl_display_publish_or_none">Hiển thị Xuất bản hoặc Không</string>
+    <string name="lbl_display_or_none">Hiển thị hoặc Không</string>
+
+    <!--BUTTON-->
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_save_image">Lưu hình ảnh</string>
+    <string name="btn_edit_message">Sửa tin nhắn</string>
+    <string name="btn_copy_message">Sao chép tin nhắn</string>
+    <string name="btn_delete_message">Xóa tin nhắn</string>
+    <string name="btn_photo_library">Ảnh thư viện</string>
+    <string name="btn_take_photo">Chụp ảnh</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="btn_block">Chặn</string>
+    <string name="btn_unblock">Bỏ chặn</string>
+    <string name="btn_edit">Chỉnh sửa</string>
+    <string name="btn_save">Lưu lại</string>
+    <string name="btn_remove_favourite">Bỏ thích</string>
+
+    <!--report-->
+    <string-array name="reportArray">
+        <item>Hành vi tình dục</item>
+        <item>Hành vi tấn công</item>
+        <item>Vi phạm các mối đe dọa</item>
+        <item>Quấy rối</item>
+        <item>Gian lận nặng nề</item>
+        <item>Ảnh không phù hợp</item>
+        <item>Khác</item>
+    </string-array>
+
+    <!--font-->
+    <string name="font">fonts/SourceSansPro-Regular.otf</string>
+    <string name="font_semibold">fonts/SourceSansPro-Semibold.otf</string>
+    <string name="font_light">fonts/SourceSansPro-Light.otf</string>
+    <string name="font_heavy">fonts/SourceSansPro-Bold.otf</string>
+    <string name="font_bold">fonts/SourceSansPro-Bold.otf</string>
+    <string name="font_medium">fonts/SourceSansPro-Light.otf</string>
+    <string name="font_thin">fonts/SourceSansPro-Light.otf</string>
+
+    <!--GPS setting-->
+    <string name="lbl_gps_setting">Cài đặt GPS </string>
+    <string name="lbl_gps_message">GPS không được bật. Bạn có muốn vào menu cài đặt?</string>
+
+    <!--ads-->
+    <string name="impossible_game">Impossible Game</string>
+    <string name="retry_button_text">Retry</string>
+    <string name="watch_video_button_text">Watch Video for 10 additional coins</string>
+    <string name="default_coin_text">Coins: 0</string>
+
+    <string name="facebook_app_id">294659987558990</string> <!--DineInn vantangst@gmail.com-->
+
+
+    <!-- AdMob ad unit IDs -->
+    <!--<string name="banner_home_footer">ca-app-pub-6925282602161900/9200353071</string>--><!--tang-->
+    <string name="banner_home_footer">ca-app-pub-5966183733493342/6518671310</string><!--song-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-6925282602161900/4953453474</string>--><!--tang-->
+    <string name="interstitial_full_screen">ca-app-pub-5966183733493342/9479994113</string><!--song-->
+    <string name="ads_video_forward">ca-app-pub-5966183733493342/3565204915</string><!--of song-->
+
+</resources>

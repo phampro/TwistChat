@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout_back" />
+
+    <TextView
+        android:id="@+id/tvActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ilActionBar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvStatusConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view_pager"
+            android:background="@color/bg_line"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/lbl_not_connect"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:customTypeface="@string/font_light" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoadChat"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/msgview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottom"
+            android:paddingBottom="3dp"
+            android:scrollbars="none" />
+
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Comments Yet"
+            android:visibility="gone"
+            app:customTypeface="@string/font_light" />
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hoangsong.zumechat.view.CustomEditText
+                    android:id="@+id/txtChatMessage"
+                    style="@style/tvBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_enter_message"
+                    android:maxLength="350"
+                    android:maxLines="5"
+                    android:minHeight="@dimen/editext_height"
+                    android:padding="@dimen/padding_L"
+                    app:customTypeface="@string/font_light"/>
+
+                <ImageButton
+                    android:id="@+id/ibtnSendMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_send_message" />
+
+                <ImageButton
+                    android:id="@+id/ibtnAddImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_L"
+                    android:layout_marginRight="@dimen/padding_L"
+                    android:background="@drawable/ic_image" />
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:adSize="BANNER"
+                app:adUnitId="@string/banner_home_footer">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

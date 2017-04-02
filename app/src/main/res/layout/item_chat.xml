@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlChatLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" >
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_height_small"
+            android:layout_marginLeft="50dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text=""
+            app:customTypeface="@string/font_light"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/ivAvata"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_normal" />
+
+            <RelativeLayout
+                android:id="@+id/rlTvChatLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/ivAvata"
+                android:background="@drawable/balloon_incoming_normal"
+                android:gravity="center|left" >
+
+                <RelativeLayout
+                    android:id="@+id/rlMsgLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.hoangsong.zumechat.view.CustomTextView
+                        android:id="@+id/msgrLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:minWidth="55dp"
+                        android:padding="5dp"
+                        android:drawablePadding="@dimen/padding_XS"
+                        android:textIsSelectable="false"
+                        app:customTypeface="@string/font_light"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/ivChatLeft"
+                        android:layout_width="200dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvLeftTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/rlMsgLeft"
+                    android:layout_below="@+id/rlMsgLeft"
+                    android:gravity="left|center"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    app:customTypeface="@string/font_light"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvIsRead"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding_L"
+                android:layout_marginRight="@dimen/padding_L"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_dot_yellow"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llChatRIght"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlTvChatRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/balloon_outgoing_normal"
+            android:gravity="center|left" >
+
+            <RelativeLayout
+                android:id="@+id/rlMsgRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/msgrRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:minWidth="55dp"
+                    android:padding="5dp"
+                    android:drawablePadding="@dimen/padding_XS"
+                    android:textIsSelectable="false"
+                    app:customTypeface="@string/font_light"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ivChatRight"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvRightTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/rlMsgRight"
+                android:layout_below="@+id/rlMsgRight"
+                android:gravity="right|center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                app:customTypeface="@string/font_light"
+                android:text="12:11"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/msgrInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            app:customTypeface="@string/font_light"
+            android:text=""
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

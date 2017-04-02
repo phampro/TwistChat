@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_online"
+        android:orderInCategory="101"
+        android:title="@string/menu_online" />
+
+    <item
+        android:id="@+id/action_offline"
+        android:orderInCategory="102"
+        android:title="@string/menu_offline" />
+    <item
+        android:id="@+id/action_busy"
+        android:orderInCategory="103"
+        android:title="@string/menu_busy" />
+</menu>

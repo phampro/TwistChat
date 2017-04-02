@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_L"
+        android:layout_marginRight="@dimen/padding_L"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnPhotoLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_topleft_topright_round"
+            android:gravity="center"
+            android:text="@string/btn_photo_library"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_chose_image"
+            android:textSize="@dimen/size_XL" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_height_small"
+            android:layout_weight="0"
+            android:background="#d5d5d5" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_botleft_botright_round"
+            android:gravity="center"
+            android:text="@string/btn_take_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dialog_chose_image"
+            android:textSize="@dimen/size_XL" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_S"
+        android:layout_marginLeft="@dimen/padding_L"
+        android:layout_marginRight="@dimen/padding_L"
+        android:layout_marginTop="@dimen/padding_S"
+        android:background="@drawable/bg_dialog_chose_image_white"
+        android:gravity="center"
+        android:text="@string/btn_cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dialog_chose_image"
+        android:textSize="@dimen/size_XL"
+        android:textStyle="bold">
+
+    </Button>
+
+</LinearLayout>

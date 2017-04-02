@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_XL_1"
+        android:paddingTop="@dimen/padding_XL_1">
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="@dimen/padding_XS"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_XS"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_XL" />
+
+        <TextView
+            android:id="@+id/tvNameGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_XS"
+            android:paddingLeft="@dimen/padding_L"
+            android:paddingRight="@dimen/padding_L"
+            android:text="Xin chào GUEST"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_XL" />
+
+        <TextView
+            android:id="@+id/tvNumberXu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_XS"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_S" />
+
+        <TextView
+            android:id="@+id/tvChangePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_XS"
+            android:text="Thay đổi mật khẩu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_S" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAddXu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llInfo"
+        android:layout_alignRight="@+id/llInfo"
+        android:text="Tăng Xu"
+        android:gravity="center"
+        android:drawablePadding="@dimen/padding_XS"
+        android:layout_marginTop="@dimen/padding_L"
+        android:layout_marginRight="@dimen/padding_M"
+        android:layout_marginBottom="@dimen/padding_M"
+        android:drawableLeft="@drawable/ic_xu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_S"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

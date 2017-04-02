@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvShareFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_S"
+        android:padding="@dimen/padding_S"
+        android:layout_marginTop="@dimen/padding_XS"
+        android:layout_marginRight="@dimen/padding_L"
+        android:text="Share Facebook"
+        android:background="@drawable/rounded_corner"/>
+
+</LinearLayout>

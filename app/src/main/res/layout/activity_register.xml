@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_conner_white_top"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_L">
+
+        <LinearLayout
+            android:id="@+id/llUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvHinLabelUsername"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_username"
+                android:visibility="gone"
+                app:customTypeface="@string/font_light" />
+
+            <com.hoangsong.zumechat.view.CustomEditText
+                android:id="@+id/txtUsername"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customTypeface="@string/font_light"
+                android:background="@drawable/edittext_bottom_line"
+                android:gravity="center|left"
+                android:hint="@string/hint_username"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvHinLabelEmail"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_email"
+                android:visibility="gone"
+                app:customTypeface="@string/font_light"/>
+
+            <com.hoangsong.zumechat.view.CustomEditText
+                android:id="@+id/txtEmail"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customTypeface="@string/font_light"
+                android:background="@drawable/edittext_bottom_line"
+                android:gravity="center|left"
+                android:hint="@string/hint_email"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|textEmailAddress"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvHinLabelCountry"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_country"
+                android:visibility="gone"
+                app:customTypeface="@string/font_light" />
+
+            <com.hoangsong.zumechat.view.CustomEditText
+                android:id="@+id/txtCountry"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customTypeface="@string/font_light"
+                android:background="@drawable/edittext_bottom_line"
+                android:gravity="center|left"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:focusable="false"
+                android:longClickable="false"
+                android:hint="@string/hint_country"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:maxLength="20"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvHinLabelPassword"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_password"
+                android:visibility="gone"
+                app:customTypeface="@string/font_light" />
+
+            <com.hoangsong.zumechat.view.CustomEditText
+                android:id="@+id/txtPassword"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customTypeface="@string/font_light"
+                android:background="@drawable/edittext_bottom_line"
+                android:gravity="center|left"
+                android:hint="@string/hint_password"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|textPassword"
+                android:maxLength="20"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRetypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvHinLabelRetypePassword"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_confirm_password"
+                android:visibility="gone"
+                app:customTypeface="@string/font_light" />
+
+            <com.hoangsong.zumechat.view.CustomEditText
+                android:id="@+id/txtRetypePassword"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customTypeface="@string/font_light"
+                android:background="@drawable/edittext_bottom_line"
+                android:gravity="center|left"
+                android:hint="@string/hint_confirm_password"
+                android:imeOptions="actionGo"
+                android:inputType="textNoSuggestions|textPassword"
+                android:maxLength="20"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/btnBlueConner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_L"
+            android:text="Đăng ký và Đăng nhập" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            style="@style/tvBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_M"
+            android:gravity="center"
+            android:padding="@dimen/padding_XS"
+            android:text="Nếu chưa có tài khoản đăng ký tại đây"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/actionbar_layout_back" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGreen">#16D631</color>
+
+    <color name="transparent_black">#80000000</color>
+
+    <color name="text_solid_blude">#1C75BC</color>
+
+    <color name="gray1">#BABABA</color>
+    <color name="text_gray">#A8B2B9</color>
+    <color name="lightgray">#D3D3D3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_white">#BDBDBD</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary_selected">#3F51B5</color>
+
+    <color name="blue_01_normal">#077DB4</color>
+    <color name="blue_01_selected">#cc2C448D</color>
+    <color name="blue_01_disabled">#802C448D</color>
+
+    <color name="green_01_normal">#ff34ad65</color>
+    <color name="green_01_selected">#cc34ad65</color>
+    <color name="green_01_disabled">#8034ad65</color>
+
+    <color name="light_grey_01">#ffb7b7b7</color>
+    <color name="light_grey_02">#ff838586</color>
+    <color name="light_grey_03">#ffe0e0e0</color>
+
+    <color name="text_blue">#4F93F4</color>
+    <color name="text_green">#1FA767</color>
+    <color name="text_red">#FF504E</color>
+    <color name="text_gay">#565656</color>
+    <color name="text_orange">#FF9800</color>
+    <!--thien-->
+    <color name="text_dialog_chose_image">#157efb</color>
+    <color name="bg_line">#666666</color>
+    <color name="white_selected">#ecebeb</color>
+    <color name="btn_photo_lib">#f5f3f3</color>
+
+</resources>

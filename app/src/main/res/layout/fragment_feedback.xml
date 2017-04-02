@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/llMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_conner_white_top"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_L">
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:minHeight="@dimen/editext_height"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_M">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvHinLabelTitle"
+                    style="@style/tvFloatingLabelBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/hint_title"
+                    android:visibility="gone"
+                    app:customTypeface="@string/font_light" />
+
+                <com.hoangsong.zumechat.view.CustomEditText
+                    android:id="@+id/txtTitle"
+                    style="@style/txtBlueFloating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="center|left"
+                    android:hint="@string/hint_title"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    app:customTypeface="@string/font_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:minHeight="@dimen/editext_height"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_M">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvHinLabelContent"
+                    style="@style/tvFloatingLabelBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/hint_content"
+                    android:visibility="gone"
+                    app:customTypeface="@string/font_light" />
+
+                <com.hoangsong.zumechat.view.CustomEditText
+                    android:id="@+id/txtContent"
+                    style="@style/txtBlueFloating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="center|left"
+                    android:hint="@string/hint_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLines="4"
+                    app:customTypeface="@string/font_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:minHeight="@dimen/editext_height"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_M">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvHinLabelPhone"
+                    style="@style/tvFloatingLabelBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/hint_phone"
+                    android:visibility="gone"
+                    app:customTypeface="@string/font_light" />
+
+                <com.hoangsong.zumechat.view.CustomEditText
+                    android:id="@+id/txtPhone"
+                    style="@style/txtBlueFloating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="center|left"
+                    android:hint="@string/hint_phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPhonetic"
+                    android:maxLength="11"
+                    app:customTypeface="@string/font_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:minHeight="@dimen/editext_height"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_M">
+
+                <com.hoangsong.zumechat.view.CustomTextView
+                    android:id="@+id/tvHinLabelEmail"
+                    style="@style/tvFloatingLabelBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/hint_email"
+                    android:visibility="gone"
+                    app:customTypeface="@string/font_light" />
+
+                <com.hoangsong.zumechat.view.CustomEditText
+                    android:id="@+id/txtEmail"
+                    style="@style/txtBlueFloating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bottom_line"
+                    android:gravity="center|left"
+                    android:hint="@string/hint_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textNoSuggestions|textEmailAddress"
+                    android:singleLine="true"
+                    app:customTypeface="@string/font_light"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnSenFeedBack"
+                style="@style/btnBlueConner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_L"
+                android:text="Gửi phản hồi" />
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvSkip"
+                style="@style/tvBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_M"
+                android:gravity="center"
+                android:padding="@dimen/padding_XS"
+                android:text="Nếu chưa có tài khoản đăng ký tại đây"
+                android:visibility="gone"
+                app:customTypeface="@string/font_light" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

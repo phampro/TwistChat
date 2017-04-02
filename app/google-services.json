@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "645991146506",
+    "project_id": "baosongngu-147207"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645991146506:android:046de9c2ef2447d7",
+        "android_client_info": {
+          "package_name": "com.hoangsong.zumechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_DHYQfIlp7gOBIr770V4Kk32oqf-6RJQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_L"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:paddingBottom="@dimen/padding_L"
+        android:paddingLeft="@dimen/padding_L"
+        android:paddingRight="@dimen/padding_L">
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvCoppy"
+            style="@style/tvBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_L"
+            android:text="@string/btn_copy_message"
+            app:customTypeface="@string/font_light" />
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvEdit"
+            style="@style/tvBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_L"
+            android:text="@string/btn_edit_message"
+            app:customTypeface="@string/font_light" />
+
+        <com.hoangsong.zumechat.view.CustomTextView
+            android:id="@+id/tvDelete"
+            style="@style/tvBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_L"
+            android:text="@string/btn_delete_message"
+            app:customTypeface="@string/font_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEdit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center_horizontal|top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/button_back" />
+
+            <com.hoangsong.zumechat.view.CustomTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_L"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:customTypeface="@string/font_bold"/>
+
+            <ImageButton
+                android:id="@+id/ibtnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/button_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_height_small"
+            android:background="@color/colorPrimary" />
+
+        <com.hoangsong.zumechat.view.CustomEditText
+            android:id="@+id/txtChatMessage"
+            style="@style/txtBlueFloating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_L"
+            android:layout_marginBottom="@dimen/padding_L"
+            android:padding="@dimen/padding_L"
+            app:customTypeface="@string/font_light"
+            android:background="@drawable/bg_conner_border_orange"
+            android:gravity="center|left"
+            android:minLines="4"
+            android:hint="@string/hint_enter_message"
+            android:imeOptions="actionGo"
+            android:inputType="textNoSuggestions|textImeMultiLine"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

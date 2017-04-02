@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/llContent"
+        android:layout_marginBottom="@dimen/padding_XXL"
+        android:id="@+id/imageView" />
+
+    <include layout="@layout/actionbar_layout_back"/>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_L"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <TextView
+                android:id="@+id/tvHinLabelPassword"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_password"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center|left"
+                android:hint="@string/hint_password"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|textPassword"
+                android:maxLength="20">
+
+            </EditText>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_height_small"
+            android:background="@color/gray1" />
+
+        <LinearLayout
+            android:id="@+id/llRetypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:minHeight="@dimen/editext_height"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_M">
+
+            <TextView
+                android:id="@+id/tvHinLabelRetypePassword"
+                style="@style/tvFloatingLabelBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hint_confirm_password"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/txtRetypePassword"
+                style="@style/txtBlueFloating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center|left"
+                android:hint="@string/hint_confirm_password"
+                android:imeOptions="actionGo"
+                android:inputType="textNoSuggestions|textPassword"
+                android:maxLength="20">
+
+            </EditText>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_height_small"
+            android:background="@color/gray1" />
+
+
+        <Button
+            android:id="@+id/btnChangePass"
+            style="@style/btnBlueConner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_L"
+            android:text="Thay đổi mật khẩu" />
+    </LinearLayout>
+
+</RelativeLayout>
